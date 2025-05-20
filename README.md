@@ -1,4 +1,4 @@
-# erdos_da_f1
+# erdos_ds_f1
 This is a repository for the F1 project of the Erdos summer 2025 Data Science bootcamp.
 ## Overview
 ### Purpose
