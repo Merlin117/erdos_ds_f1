@@ -16,3 +16,4 @@ Within this repo you will find the data that we used (from Kaggle.com), the scri
 - Training (model and training scripts)
 - Validation (test validation)
 - Final figures and plot (for presentation)
+
