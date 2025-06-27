@@ -11,7 +11,7 @@ The purpose of this project was to create a model that can predict how exciting 
 ### The Math in our Model
 We wanted to find a good way to quantify how exciting a race could be based off of how much the finishing grid changes from the starting grid of a race. To do this we came up with a metric called 'Average Local Position Change' (ALPC) determined by the following formula
 
-$$ALPC=\frac{1}{N(N-1)}\sum_{i=1}^N\left |\sum_{\matrix{j=1 \\ j\neq i}}^N (i-j)-(\sigma^{-1}(i)-\sigma^{-1}(j))\right |$$
+$$ALPC=\frac{1}{N(N-1)}\sum_{i=1}^N\left |\sum_{\matrix{j\neq i}^N (i-j)-(\sigma^{-1}(i)-\sigma^{-1}(j))\right |$$
 
 where $N$ is the number of drivers and $\sigma$ is the permutation which represents the finishing positons of the racers. We chose this over an excitement metric like the total number of overtakes since there can exist uninteresting races which have the same number of overtakes as exciting ones. Consider the finishing positions $15234$ and $13524$. Both have the same number of overtakes, but the first one seems to be uninteresting since the only change from the starting grid $12345$ is the racer in 5th moving up to 2nd. 
 
